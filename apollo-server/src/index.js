@@ -4,12 +4,12 @@ import gql from 'graphql-tag';
 
 const typeDefs = gql`
     type Query {
-        hello: String
+        hello(name: String): String
     }
 `;
 const resolvers = {
     Query: {
-        hello: () => 'Hello from Apollo Server',
+        hello: (_, {name}) => `Hello ${name}`,
     },
 };
 
