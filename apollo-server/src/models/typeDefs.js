@@ -10,4 +10,7 @@ export const typeDefs = gql`
         title: String,
         year: Int,
     }
+    type Mutation {
+        create(title: String, year: Int): Book
+    }
 `;
