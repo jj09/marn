@@ -1,15 +1,6 @@
-import { gql, useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import Book from './Book';
-
-const BOOKS_QUERY = gql`
-    query Query {
-        books {
-            id
-            title
-            year
-        }
-    }
-`;
+import { BOOKS_QUERY } from '../graphql';
 
 export default function Books() {
     const {data, loading, error} = useQuery(BOOKS_QUERY);
