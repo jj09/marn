@@ -19,3 +19,9 @@ export const CREATE_BOOK_MUTATION = gql`
         }
     }
 `;
+
+export const DELETE_BOOK_MUTATION = gql`
+    mutation Mutation($id: ID) {
+        delete(id: $id)
+    }
+`;

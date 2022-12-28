@@ -15,6 +15,7 @@ export default function Books() {
                 <tr>
                     <th>Title</th>
                     <th>Year</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
