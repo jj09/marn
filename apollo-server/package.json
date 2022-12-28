@@ -2,7 +2,8 @@
   "dependencies": {
     "@apollo/client": "^3.7.3",
     "@apollo/server": "^4.3.0",
-    "graphql": "^16.6.0"
+    "graphql": "^16.6.0",
+    "mongoose": "^6.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
